@@ -6,12 +6,12 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository
 @Mapper
+@Repository
 public interface TestMapper {
 
     List<TestDTO> selectUserList();
-    TestDTO selectUserById(Integer userId);
+//    TestDTO selectUserById(Integer mbrSeq);
 
 
 }

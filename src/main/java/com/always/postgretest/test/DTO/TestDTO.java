@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class TestDTO {
 
-    private Integer id;
+    private Integer mbrSeq;
 
-    private String name;
+    private String mbrName;
 }
