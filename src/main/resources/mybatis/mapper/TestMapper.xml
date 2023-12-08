@@ -1,23 +1,23 @@
-<!--<?xml version="1.0" encoding="UTF-8"?>-->
-<!--<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">-->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!--
     [템플릿 설명]
     - 해당 파일은 SQL 문을 작성하는 곳입니다.
 -->
-<!--<mapper namespace="com.always.postgretest.test.Mapper.TestMapper">-->
+<mapper namespace="com.always.postgretest.mapper.TestMapper">
 
-<!--    <select id="selectUserList" resultType="java.util.HashMap">-->
-<!--        SELECT mbr_seq,-->
-<!--               mbr_name-->
-<!--        FROM public."mbr_base";-->
-<!--    </select>-->
+    <select id="selectUserList" resultType="java.util.HashMap">
+        SELECT mbr_seq,
+               mbr_name
+        FROM public.mbr_base;
+    </select>
 
-<!--    <select id="selectUserById" resultType="hello.springmvc.first.DTO.FirstDTO">-->
-<!--        SELECT id,-->
-<!--               name-->
-<!--        FROM public."user"-->
-<!--        WHERE id = #{id}-->
-<!--    </select>-->
+    <select id="selectUserById" resultType="com.always.postgretest.dto.TestDTO">
+        SELECT id,
+               name
+        FROM public.user
+        WHERE id = #{id}
+    </select>
 
-<!--</mapper>-->
+</mapper>

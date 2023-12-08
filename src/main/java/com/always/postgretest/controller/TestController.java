@@ -1,8 +1,8 @@
-package com.always.postgretest.test.Controller;
+package com.always.postgretest.controller;
 
 
-import com.always.postgretest.test.DTO.TestDTO;
-import com.always.postgretest.test.Service.TestService;
+import com.always.postgretest.dto.TestDTO;
+import com.always.postgretest.service.TestService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,12 +24,12 @@ public class TestController {
     }
 
 
-//    @GetMapping("/list")
-//    public List<TestDTO> selectUserList(){
-//        System.out.println("안녕");
-//        List<TestDTO> result = testService.selectUserList();
-//        return result;
-//    }
+    @GetMapping("/list")
+    public List<TestDTO> selectUserList(){
+        System.out.println("안녕");
+        List<TestDTO> result = testService.selectUserList();
+        return result;
+    }
 
 //    @GetMapping("/{mbrSeq}")
 //    public TestDTO selectUserById(@PathVariable("mbrSeq") int mbrSeq){

@@ -1,6 +1,6 @@
-package com.always.postgretest.test.Mapper;
+package com.always.postgretest.mapper;
 
-import com.always.postgretest.test.DTO.TestDTO;
+import com.always.postgretest.dto.TestDTO;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -11,7 +11,7 @@ import java.util.List;
 public interface TestMapper {
 
     List<TestDTO> selectUserList();
-//    TestDTO selectUserById(Integer mbrSeq);
+    TestDTO selectUserById(Integer mbrSeq);
 
 
 }

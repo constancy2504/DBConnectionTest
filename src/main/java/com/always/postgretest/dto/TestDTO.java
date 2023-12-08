@@ -1,4 +1,4 @@
-package com.always.postgretest.test.DTO;
+package com.always.postgretest.dto;
 
 
 import lombok.AllArgsConstructor;
